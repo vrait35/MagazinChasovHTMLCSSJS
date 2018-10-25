@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700,900" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+ <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+ <link rel="stylesheet" href="style.css">
+  <title>Smart</title>
+
+</head>
+<body>
+
+
+
+
+
+<!-- <div class="container">
+  <div class="row">
+    <div class="footer"> -->
+      <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="shop-name">ANUAR</div>
+        <ul class="ul-main">
+          <li>Характеристики</li>
+          <li>Преимущества</li>
+          <li>Как мы работаем</li>
+          <li>Отзывы</li>
+          <li>Доставка</li>
+        </ul>
+      </div> -->
+      <div class="container">
+        <div class="row">
+      <div class="menu">
+          <div class="menu__icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="menu__links">
+              <div class="shop-name">ANUAR</div>
+              <a class="menu__links-item" >Характеристики</a>
+              <a class="menu__links-item">Преимущества</a>
+              <a class="menu__links-item">Как мы работаем</a>
+              <a class="menu__links-item">Отзывы</a>
+              <a class="menu__links-item">Доставка</a>
+          </div>
+      </div>
+      </div>
+      </div>
+    <!-- </div>
+  </div>
+</div> -->
+<div class="container">
+  <div class="row">
+    <div class="main">
+
+      <div class="left">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+<div class="title">СТИЛЬНЫЕ УМНЫЕ ЧАСЫ</div>
+
+  <div class="title1">  <div class="clock">
+        <div id="Date"></div>
+        <ul >
+            <li id="hours"> </li>
+            <li id="point">:</li>
+            <li id="min"> </li>
+            <li id="point">:</li>
+            <li id="sec"> </li>
+        </ul>
+    </div></div>
+  <div class="title2"><span class="diver">SMART WATCH X6</span></div>
+
+  <div class="garant">
+    <ul>
+      <li> <div class="circle"><img src="images/shield.png"></div>
+        <span> 100% гарантия качества </span>
+      </li>
+      <li><div class="circle"><img src="images/cargo-truck.png"></div>
+        <span> Бесплатная доставка </span></li>
+      <li><div class="circle"><img src="images/coin.png"></div>
+        <span> Низкая цена </span></li>
+    </ul>
+  </div>
+<div class="skidka">
+  <div class="row">
+  <div class="timer">
+    <span>Осталось часов по акции:</span><br>
+    <ul>
+      <li><div class="bor">0</div></li>
+      <li><div class="bor">2</div></li>
+      <li><div class="bor">0</div></li>
+    </ul>
+  </div>
+  <div class="button-cena">
+    <div class="cena"><span class="zach">13000тг.</span>
+    <span class="norm7k">7000тг.</span></div>
+    <div class="button">
+      <a href="https://google.com"><a id="popup" href="javascript:void(0);">ЗАКАЗАТЬ</a></a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+      </div>
+
+      <div class="right">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+
+      <img src="images/4x6.png">
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+  </div>
+
+
+
+<!--далее идет галерея -->
+
+
+<script>
+
+$(function(){
+  $('.minimized').click(function(event) {
+    var i_path = $(this).attr('src');
+    $('body').append('<div id="overlay"></div><div id="magnify"><img src="'+i_path+'"><div id="close-popup"><i></i></div></div>');
+    $('#magnify').css({
+	    left: ($(document).width() - $('#magnify').outerWidth())/2,
+
+            top: ($(window).height() - $('#magnify').outerHeight())/2
+	  });
+    $('#overlay, #magnify').fadeIn('fast');
+  });
+
+  $('body').on('click', '#close-popup, #overlay', function(event) {
+    event.preventDefault();
+
+    $('#overlay, #magnify').fadeOut('fast', function() {
+      $('#close-popup, #magnify, #overlay').remove();
+    });
+  });
+});
+
+
+</script>
+
+
+
+
+<div class="content">
+<ul class="uu">
+
+  <li><div class="info">
+  <span> Smart watch A1<span><br>
+      <span class="price">7000тг.<span><br>
+      <img src="images/k4.jpg" class="minimized">
+    </div></li>
+    <li><div class="info">
+      <span>Smart watch A1<span><br>
+        <span class="price">7000тг.<span><br>
+        <img src="images/k6.jpg" class="minimized">
+      </div></li>
+      <li><div class="info">
+        <span> Smart watch A1<span><br>
+          <span class="price">7000тг.<span><br>
+          <img src="images/k5.jpg" class="minimized">
+        </div></li><br>
+
+
+<li><div class="info">
+  <span> Smart watch X6<span><br>
+    <span class="price">8000тг.<span><br>
+    <img src="images/k1.png" class="minimized">
+  </div></li>
+  <li><div class="info">
+    <span> Smart watch X6<span><br>
+      <span class="price">8000тг.<span><br>
+      <img src="images/k2.jpg" class="minimized">
+    </div></li>
+    <li><div class="info">
+      <span>Smart watch X6<span><br>
+        <span class="price">8000тг.<span><br>
+        <img src="images/k3.jpg" class="minimized">
+      </div></li><br>
+
+
+
+
+
+</ul>
+</div>
+
+
+
+
+
+
+<div class="content2">
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div  style='overflow:hidden;height:440px;margin:auto;margin-bottom: 100px;  width:70%;'>
+  <div id='gmap_canvas' style='height:440px;width: 100%;'></div><div><small><a href="https://embedgooglemaps.com/ru/">embedgooglemaps RU</a></small></div><div><small><a href="https://iamsterdamcard.it">http://iamsterdamcard.it/</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(51.185292332413724,71.40732129371042),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(51.185292332413724,71.40732129371042)});infowindow = new google.maps.InfoWindow({content:'<strong>шаг</strong><br>казахстан, астана,молдагулова <br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/watch.js"></script>
+
+
+
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="popup-overlay"><!-- //оверлей - отображение формы на затемненном фоне -->
+
+          <div class="popWindow subscribe_window"><!-- //основное окно формы Подписки -->
+            <p class="subcsribe-text">Заказать часы</p>
+            <form class="subscribe-form" autocomplete="off">
+              <div>
+                <input type="text" id="name-subscribe" name="Name" placeholder=" " required>
+                <label for="name-subscribe">Ваше мя<span>*</span></label>
+              </div>
+              <div>
+                <input type="number" id="email-subscribe" name="E-mail" placeholder=" " required>
+                <label for="email-subscribe">Телефон<span>*</span></label>
+              </div>
+              <div class="aligncenter">
+                <button type="submit" class="btn"><i class="fa fa-check" aria-hidden="true"></i>Отправить</button>
+              </div>
+
+            </form>
+            <div class="close-btn">&times;</div>
+          </div><!-- /subscribe_window -->
+
+          <div class="popWindow thank_you_window"><!-- //благодарственное окно после успешной отправки формы -->
+            <p class="thank_you_title">Заявка принята</p>
+            <p class="thank_you_body">Наш курьер с вами свяжется</p>
+            <div class="close-btn">&times;</div>
+          </div><!-- /thank_you_window -->
+
+        </div><!-- /popup-overlay -->
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script type="text/javascript">
+    var $popUp = $('#popup');
+    $popUp.on('click', function(){
+    $popOverlay.fadeIn();
+    $popWindow.fadeIn();
+  });
+  </script>
+
+
+
+
+
+
+  <script type="text/javascript">
+  var $popOverlay = $(".popup-overlay");
+  // var $popWindow = $(".popWindow");
+  var $subscribeWindow = $(".subscribe_window");
+  var $popThankYouWindow = $(".thank_you_window");
+  var $popClose = $(".close-btn");
+
+  $(function() {
+  // Close Pop-Up after clicking on the button "Close"
+  $popClose.on("click", function() {
+    $popOverlay.fadeOut();
+    $popWindow.fadeOut();
+  });
+
+  // Close Pop-Up after clicking on the Overlay
+  $(document).on("click", function(event) {
+    if ($(event.target).closest($popWindow).length) return;
+    $popOverlay.fadeOut();
+    $popWindow.fadeOut();
+    event.stopPropagation();
+  });
+
+  // Form Subscribe
+  $(".subscribe-form").submit(function() {
+    // var th = $(this);
+    // $.ajax({
+    //   type: "POST",
+    //   url: "mail.php",
+    //   data: th.serialize()
+    // }).done(function() {
+    //   // после успешной отправки скрываем форму подписки и выводим окно с благодарностью за заполнение формы
+    //   $subscribeWindow.fadeOut();
+    //   $popThankYouWindow.fadeIn();
+    //   // используем куки на 30 дней, если человек заполнил форму
+    //   // для куки обязательно должен быть подключен jquery.cookie.min.js
+    //   $.cookie('hideTheModal', 'true', { expires: 30 });
+    //   // очищаем форму
+    //   setTimeout(function() {
+    //     th.trigger("reset");
+    //   }, 1000);
+    // });
+    $subscribeWindow.fadeOut();
+      $popThankYouWindow.fadeIn();
+    return false;
+  });
+  });
+  </script>
+
+
+  <script type="text/javascript">
+  $(window).load(function() {
+  setTimeout(function() {
+    $popOverlay.fadeIn();
+    $subscribeWindow.fadeIn();
+  }, 2000);
+  });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/bootstrap.min.js"></script>
+<script  src="js/menu.js">
+
+</script>
+
+</body>
+</html>
